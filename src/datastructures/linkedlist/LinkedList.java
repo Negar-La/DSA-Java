@@ -122,8 +122,8 @@ public class LinkedList {
 
     public boolean set(int index, int value){
         if (index < 0 || index >= length) return false;
-        Node result = get(index);
-        result.value = value;
+        Node temp = get(index);
+        temp.value = value;
         return true;
     }
 
