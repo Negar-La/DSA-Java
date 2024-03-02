@@ -121,7 +121,7 @@ public class DoublyLinkedList {
         } else { //node we're looking for is in the second half of the linked list.
             temp = tail;
             for(int i = length-1; i > index; i--){
-                tail = tail.prev;
+                temp = temp.prev;
 
             }
         }
@@ -166,8 +166,19 @@ public class DoublyLinkedList {
 
         Node temp = get(index); //since we are returning this Node, we need a variable to point to it.
 
-        temp.next.prev = temp.prev; // do this with just 1 variable!
+        /*
+        // do this with just 1 variable!
+        temp.next.prev = temp.prev;
         temp.prev.next = temp.next;
+        temp.next = null;
+        temp.prev = null;
+
+         */
+        Node before = temp.prev;
+        Node after = temp.next;
+
+        before.next = temp.next;
+        after.prev = temp.prev;
         temp.next = null;
         temp.prev = null;
 
