@@ -52,7 +52,7 @@ public class Main {
         myDLL.printList();
 
         System.out.println("remove method ==============");
-        myDLL.remove(4);
+        myDLL.remove(2);
         myDLL.printList();
 
 
