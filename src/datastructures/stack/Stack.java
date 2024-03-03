@@ -1,4 +1,16 @@
 package datastructures.stack;
+/*
+ stack is like a can of tennis balls
+ LIFO = Last In, First Out
+ Rule: you have to push and pop from the SAME end.
+ Example: the back button in the web browser
+ Implementing stack: 1- array list => add & remove at the end has O(1)
+                     2- linked list => add & remove at the beginning O(1)
+
+ linked list method (prepend) => stack (push)
+ Linked list method (removeFirst) => stack (pop)
+ */
+
 
 public class Stack {
     private Node top; //we only add & remove items from the top because both are O(1) and we don't need the bottom.
