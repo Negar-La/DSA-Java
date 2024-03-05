@@ -1,5 +1,7 @@
 package datastructures.linkedlist;
 
+//Each node has to have a pointer pointing to it or it's garbage collected.
+//That's why we need 'head' pointing to the first node, otherwise it will get garbage collected
 public class LinkedList {
     //three class variables
     private Node head;
