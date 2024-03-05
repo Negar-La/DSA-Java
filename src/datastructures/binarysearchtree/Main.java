@@ -18,5 +18,9 @@ public class Main {
         myBST.insert(27);
         System.out.println(myBST.root.left.right.value); //to get to number 27, starting from root, we go to the left and then right
 
+        System.out.println("contains method =============");
+
+        System.out.println(myBST.contains(27));
+        System.out.println(myBST.contains(17));
     }
 }
